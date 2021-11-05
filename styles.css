@@ -44,8 +44,6 @@ body {
   align-items: center;
   text-align: center;
 }
-.gofishimg {
-}
 
 .cardbottom {
   display: flex;
@@ -72,8 +70,3 @@ body {
   font-size: 2rem;
   margin: 0.5rem;
 }
-
-/* .cards {
-  display: flex;
- justify-content: space-between;
-} */
