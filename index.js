@@ -78,8 +78,43 @@ const foodTiles = [
   "tomato",
 ];
 
-let tiletype = "png";
-let tiles = foodTiles;
+const animaltiles = [
+  "Ant",
+  "Bear",
+  "Bee",
+  "Bird",
+  "Butterfly",
+  "Cat",
+  "Caterpillar",
+  "Chicken",
+  "Cow",
+  "Crab",
+  "Deer",
+  "Dinosaur",
+  "Dog",
+  "Dolphin",
+  "Dragonfly",
+  "Duck",
+  "Elephant",
+  "Fish",
+  "Frog",
+  "Giraffe",
+  "Gorilla",
+  "Horse",
+  "Kangaroo",
+  "Leopard",
+  "Lion",
+  "Octopus",
+  "Panda", 
+  "Pig",
+  "Rhinoceros",
+  "Spider",
+  "Turtle",
+  "Whale"
+]
+
+let tiletype = "svg";
+let tiles = animaltiles;
 
 // Add new playing card
 function newTile() {
@@ -92,11 +127,11 @@ function newTile() {
             <img class="poker1" src="img/poker-cards.png" alt="">
           </div>
           <div class="cardcenter">
-          <h3 class="h3class">Would you like...<br>a/an/some</h3>
+          <h3 class="h3class">Would you like a pet...</h3>
           <div class="gofishimg"><img src="img/${
             tiles[counter]
           }.${tiletype}" alt=""></div>
-          <h2 class="h2class">...${tiles[counter].replace("-", " ")}?</h2>
+          <h2 class="h2class">${tiles[counter].replace("-", " ").toLowerCase()}?</h2>
           </div>
           <div class="cards cardbottom">        <img class="poker1" src="img/poker-cards.png" alt="">
             <img class="poker1" src="img/poker-cards.png" alt="">
